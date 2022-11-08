@@ -1,0 +1,16 @@
+.portfolio {
+    padding: 120px 0;
+  }
+  
+  .portfolio-text {
+    font-weight: 600;
+    font-size: 11px;
+    text-transform: uppercase;
+    color: var(--primary-color);
+    margin-bottom: 44px;
+  }
+  
+  .portfolio-photos {
+    display: flex;
+    gap: 30px;
+  }

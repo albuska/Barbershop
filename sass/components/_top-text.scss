@@ -1,0 +1,13 @@
+.top-text {
+    display: flex;
+    align-items: center;
+    margin-bottom: 20px;
+  }
+  
+  .top-text::before {
+    content: "";
+    width: 60px;
+    height: 1px;
+    background-color: currentColor;
+    margin-right: 20px;
+  }

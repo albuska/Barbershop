@@ -1,0 +1,36 @@
+.button {
+    display: block;
+    min-width: 160px;
+    height: 40px;
+    letter-spacing: 0.09em;
+    color: var(--primary-bgc);
+    text-transform: uppercase;
+    border: 1px solid #ff6c00;
+    border-radius: 25px;
+    background-color: transparent;
+    cursor: pointer;
+    margin-right: 17px;
+    transition: background-color 250ms linear;
+  }
+  
+  .button:hover,
+  .button:focus {
+    background-color: var(--accent-color);
+  }
+
+  .btn-secondary {
+    color: var(--primary-color);
+    transition: color 250ms linear;
+  }
+  
+  .btn-secondary:hover,
+  .btn-secondary:focus {
+    color: var(--primary-bgc);
+  }
+  
+  .button-services {
+    padding-left: 15px;
+    padding-right: 15px;
+    margin: 0 auto;
+    margin-top: 44px;
+  }

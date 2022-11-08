@@ -1,0 +1,45 @@
+.about {
+    padding: 120px 0;
+  }
+  
+  .about-list {
+  display: flex;
+  gap: 30px;
+  }
+  
+  .about-text-top {
+    font-weight: 600;
+    font-size: 11px;
+    text-transform: uppercase;
+    color: var(--primary-color);
+    margin-bottom: 20px;
+  }
+  
+  .about-title {
+    max-width: 470px;
+    font-weight: 700;
+    font-size: 42px;
+    line-height: 1.16;
+    letter-spacing: 0.05em;
+    color: var(--primary-color);
+    margin-bottom: 20px;
+  }
+  
+  .about-text-bottom {
+    max-width: 470px;
+    margin-bottom: 20px;
+    font-size: 18px;
+    line-height: 1.67;
+    letter-spacing: 0.02em;
+    color: var(--secondary-color);
+  }
+  
+  .about-text-secondary {
+    max-width: 470px;
+    margin-bottom: 42px;
+    font-size: 14px;
+    line-height: 1.86;
+    letter-spacing: 0.02em;
+    color: var(--secondary-color);
+  }
+  

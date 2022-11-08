@@ -1,0 +1,51 @@
+.header {
+    position: absolute;
+    width: 100%;
+  }
+  
+  .logo-header {
+    display: block;
+    margin-right: 132px;
+   
+  }
+  
+  .icon-nav {
+    display: flex;
+    font-weight: 600;
+    font-size: 12px;
+    line-height: 1.33;
+    letter-spacing: 0.1em;
+    color: var(--primary-bgc);
+  }
+  
+  .nav {
+    transition: color 250ms linear;
+  }
+  
+  .nav:hover,
+  .nav:focus {
+    color: var(--accent-color);
+  }
+  
+  .main-nav {
+    display: flex;
+    align-items: center;
+    margin-top: 32px;
+  }
+  
+  .header-link{
+    display: flex;
+  }
+  
+  .main-contact {
+    display: flex;
+    align-items: center;
+    gap: 43px;
+    margin-left: auto;
+  }
+  
+  .header-link .header-item + .header-item {
+    margin-left: 30px;
+  }
+  
+  

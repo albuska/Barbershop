@@ -232,9 +232,16 @@ body {
   padding: 120px 0;
 }
 
-.about-list {
-  display: flex;
-  gap: 30px;
+@media screen and (max-width: 767px) {
+  .about-list img {
+    display: none;
+  }
+}
+@media screen and (min-width: 768px) {
+  .about-list {
+    display: flex;
+    gap: 30px;
+  }
 }
 
 .about-text-top {
@@ -441,9 +448,11 @@ body {
   padding: 120px 0;
 }
 
-.barbers-list {
-  display: flex;
-  gap: 30px;
+@media screen and (min-width: 1200px) {
+  .barbers-list {
+    display: flex;
+    gap: 30px;
+  }
 }
 
 .barbers-text {
@@ -499,9 +508,7 @@ body {
 .icon-networks {
   transition: fill 250ms linear;
 }
-
-.icon-networks:hover,
-.icon-networks:focus {
+.icon-networks:hover, .icon-networks:focus {
   fill: var(--accent-color);
 }
 
@@ -573,10 +580,6 @@ body {
   margin-bottom: 44px;
   transition: color 250ms linear, border-color 250ms linear;
 }
-
-/* .label-textarea:focus {
-  color: var(--primary-bgc);
-} */
 .textarea:focus {
   color: var(--primary-bgc);
   border-color: var(--primary-bgc);
@@ -625,7 +628,6 @@ display: block;
   outline: transparent;
   transition: color 250ms linear, border-color 250ms linear;
 }
-
 .input:focus {
   color: var(--primary-bgc);
   border-color: var(--primary-bgc);
@@ -760,8 +762,6 @@ display: block;
   color: var(--primary-color);
   transition: color 250ms linear;
 }
-
-.social-networks-link-footer:hover,
-.social-networks-link-footer:focus {
+.social-networks-link-footer:hover, .social-networks-link-footer:focus {
   color: var(--accent-color);
 }/*# sourceMappingURL=main.css.map */

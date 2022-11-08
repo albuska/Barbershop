@@ -3,10 +3,19 @@
   }
   
   .about-list {
-  display: flex;
-  gap: 30px;
+
+  & img {
+    @media screen and (max-width: 767px) {
+      display: none; 
+     }
   }
-  
+
+  @include tablet {
+    display: flex;
+    gap: 30px;
+  }
+  }
+
   .about-text-top {
     font-weight: 600;
     font-size: 11px;

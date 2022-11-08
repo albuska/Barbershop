@@ -4,8 +4,11 @@
   }
   
   .barbers-list {
-    display: flex;
-    gap: 30px;
+
+    @include desktop {
+      display: flex;
+      gap: 30px;
+    }
   }
   
   .barbers-text {
@@ -61,10 +64,10 @@
   
   .icon-networks {
     transition: fill 250ms linear;
+
+    &:hover,
+    &:focus {
+      fill: var(--accent-color);
   }
-  
-  .icon-networks:hover,
-  .icon-networks:focus {
-    fill: var(--accent-color);
-  }
+}
   

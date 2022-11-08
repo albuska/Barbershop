@@ -50,17 +50,11 @@
     margin-bottom: 44px;
     transition: color 250ms linear,
                 border-color 250ms linear;
-  }
-  
-  /* .label-textarea:focus {
-    color: var(--primary-bgc);
-  } */
-  
-  .textarea:focus {
+    &:focus {
     color: var(--primary-bgc);
     border-color: var(--primary-bgc);
   }
-  
+  }
   
   .main-input {
     display: flex;
@@ -108,11 +102,10 @@
     outline: transparent;
     transition: color 250ms linear,
                 border-color 250ms linear;
-  }
-  
-  .input:focus {
+    &:focus {
     color: var(--primary-bgc);
     border-color: var(--primary-bgc);
+  }
   }
   
   .input::placeholder {

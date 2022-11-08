@@ -1,0 +1,32 @@
+.main-footer {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 56px 0;
+  }
+  
+  .footer-text {
+    font-weight: 600;
+    font-size: 11px;
+    letter-spacing: 0.2em;
+    color: var(--third-text-color);
+  }
+  
+  .networks-footer {
+    display: flex;
+    align-items: center;
+    gap: 40px;
+  } 
+  
+  .social-networks-link-footer {
+    font-weight: 600;
+    font-size: 11px;
+    letter-spacing: 0.2em;
+    color: var(--primary-color);
+    transition: color 250ms linear;
+  }
+  
+  .social-networks-link-footer:hover,
+  .social-networks-link-footer:focus {
+    color: var(--accent-color);
+  }

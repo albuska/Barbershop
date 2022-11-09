@@ -1,5 +1,13 @@
 .about {
+  padding: 84px 0;
+  
+  @include tablet {
+    padding: 100px 0;
+  }
+
+  @include desktop {
     padding: 120px 0;
+  }
   }
   
   .about-list {
@@ -27,20 +35,28 @@
   .about-title {
     max-width: 470px;
     font-weight: 700;
-    font-size: 42px;
+    font-size: 28px;
     line-height: 1.16;
     letter-spacing: 0.05em;
     color: var(--primary-color);
     margin-bottom: 20px;
+
+    @include desktop {
+    font-size: 42px;
+    }
   }
   
   .about-text-bottom {
     max-width: 470px;
     margin-bottom: 20px;
-    font-size: 18px;
+    font-size: 16px;
     line-height: 1.67;
     letter-spacing: 0.02em;
     color: var(--secondary-color);
+
+    @include tablet {
+    font-size: 18px;
+    }
   }
   
   .about-text-secondary {

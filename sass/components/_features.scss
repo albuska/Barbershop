@@ -1,5 +1,9 @@
 .features {
+padding: 84px 0;
+  @include desktop {
     padding: 120px 70px 120px 100px;
+  }
+    
   }
   
   .main-numbers-box {
@@ -54,11 +58,17 @@
   }
   
   .features-main {
-    display: flex;
+    display: inline-flex;
+    flex-direction: column-reverse;
+    @include desktop {
+      display: flex;
+    }
   }
   
   .features-box {
+    @include desktop {
     margin-left: 130px;
+    }
   }
   
   .features-title {
@@ -72,7 +82,8 @@
   }
   
   .features-bottom-text {
-    width: 500px;
+    margin-bottom: 44px;
+    width: 100%;
     font-size: 18px;
     line-height: 1.67;
     letter-spacing: 0.02em;

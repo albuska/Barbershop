@@ -4,11 +4,58 @@
   }
   
   .logo-header {
+    width: 68px;
+    height: 55px;
     display: block;
     margin-right: 132px;
-   
+    fill: var(--primary-bgc);
+
+    @include tablet {
+      fill: var(--primary-color);
+    }
   }
+ 
+   .button-open-menu {
+    margin-left: auto;
+    display: inline-flex;
+    border: none;
+    background-color: transparent;
+    @include tablet {
+      display: none;
+    }
+   }
+
+   .button-close-menu {
+    position: absolute;
+    top: 35px;
+    right: 30px;
+    display: inline-flex;
+    border: none;
+    background-color: transparent;
+   }
+
+   .menu-container {
+    position: fixed;
+    top: 0;
+    right: 0;
+    width: 337px;
+    height: 100%;
+    background-color: var(--primary-bgc);
+    z-index: 1;
   
+    @include tablet {
+      display: none;
+    }
+   }
+  
+   .menu-container-link {
+    font-weight: 600;
+    font-size: 18px;
+    line-height: 1.4;
+   letter-spacing: 0.1em;
+   color: var(--primary-color);
+   }
+
   .icon-nav {
     display: flex;
     font-weight: 600;
@@ -20,11 +67,11 @@
   
   .nav {
     transition: color 250ms linear;
-  }
-  
-  .nav:hover,
-  .nav:focus {
-    color: var(--accent-color);
+
+  &:hover,
+  &:focus {
+      color: var(--accent-color);
+    }
   }
   
   .main-nav {
@@ -34,14 +81,22 @@
   }
   
   .header-link{
+    display: none;
+
+  @include tablet {
     display: flex;
+  }
   }
   
   .main-contact {
-    display: flex;
-    align-items: center;
-    gap: 43px;
-    margin-left: auto;
+  display: none;
+    @include tablet {
+      display: flex;
+      align-items: center;
+      gap: 43px;
+      margin-left: auto;
+    }
+   
   }
   
   .header-link .header-item + .header-item {

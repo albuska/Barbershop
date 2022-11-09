@@ -1,8 +1,12 @@
 .main-footer {
     display: flex;
+    flex-direction: column-reverse;
+
+    @include desktop {
     justify-content: space-between;
     align-items: center;
     padding: 56px 0;
+    }
   }
   
   .footer-text {

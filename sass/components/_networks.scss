@@ -11,20 +11,26 @@
   }
   
   .networks {
-    position: absolute;
-    transform: rotate(-90deg);
-    display: flex;
-    align-items: center;
-    gap: 40px;
-    margin-left: -100px;
-    top: 480px;     
-  &::before {
-    content: "";
-    width: 60px;
-    height: 1px;
-    background-color: currentColor;
-    display: block;
-  }
+    display: none;
+
+    @include tablet {
+      position: absolute;
+      transform: rotate(-90deg);
+      display: flex;
+      align-items: center;
+      gap: 40px;
+      margin-left: -100px;
+      top: 480px;     
+    &::before {
+      content: "";
+      width: 60px;
+      height: 1px;
+      background-color: currentColor;
+      display: block;
+    }
+    }
   } 
+
+  
 
   

@@ -4,6 +4,10 @@
     letter-spacing: 0.2em;
     color: var(--primary-color);
     transition: color 250ms linear;
+&:hover,
+&:focus {
+    color: var(--accent-color);
+    }
   }
   
   .networks {
@@ -13,18 +17,14 @@
     align-items: center;
     gap: 40px;
     margin-left: -100px;
-    top: 480px;
-  } 
-  
-  .networks::before {
+    top: 480px;     
+  &::before {
     content: "";
     width: 60px;
     height: 1px;
     background-color: currentColor;
     display: block;
   }
+  } 
+
   
-  .social-networks-link:hover,
-  .social-networks-link:focus {
-    color: var(--accent-color);
-  }

@@ -12,17 +12,18 @@
   .list-services-prices {
     display: flex;
     align-items: baseline;
-  }
-  
-  .list-services-prices:not(:last-child) {
+  &:not(:last-child) {
     margin-bottom: 20px;
-  }
-  
-  .list-services-prices::before {
+    }
+  &::before {
     content: "";
     height: 1px;
     min-width: 137px;
     background: rgba(157, 164, 189, 0.12);
     flex-grow: 1;
     order: 1;
+    }
   }
+  
+  
+  

@@ -1,6 +1,14 @@
 .barbers {
     background-color: var(--secondary-bgc);
+    padding: 84px 0;
+
+    @include tablet {
+    padding: 100px 0;
+    }
+
+    @include desktop {
     padding: 120px 0;
+    }
   }
   
   .barbers-list {
@@ -8,6 +16,12 @@
     @include desktop {
       display: flex;
       gap: 30px;
+    }
+  }
+
+  .barbers-item:not(:last-child) {
+    @media screen and (max-width: 767px) {
+    margin-bottom: 64px;  
     }
   }
   

@@ -129,6 +129,9 @@ body {
   color: var(--primary-color);
   transition: color 250ms linear;
 }
+.social-networks-link:hover, .social-networks-link:focus {
+  color: var(--accent-color);
+}
 
 .networks {
   position: absolute;
@@ -139,18 +142,12 @@ body {
   margin-left: -100px;
   top: 480px;
 }
-
 .networks::before {
   content: "";
   width: 60px;
   height: 1px;
   background-color: currentColor;
   display: block;
-}
-
-.social-networks-link:hover,
-.social-networks-link:focus {
-  color: var(--accent-color);
 }
 
 .button {
@@ -167,9 +164,7 @@ body {
   margin-right: 17px;
   transition: background-color 250ms linear;
 }
-
-.button:hover,
-.button:focus {
+.button:hover, .button:focus {
   background-color: var(--accent-color);
 }
 
@@ -177,9 +172,7 @@ body {
   color: var(--primary-color);
   transition: color 250ms linear;
 }
-
-.btn-secondary:hover,
-.btn-secondary:focus {
+.btn-secondary:hover, .btn-secondary:focus {
   color: var(--primary-bgc);
 }
 
@@ -349,11 +342,9 @@ body {
   display: flex;
   align-items: baseline;
 }
-
 .list-services-prices:not(:last-child) {
   margin-bottom: 20px;
 }
-
 .list-services-prices::before {
   content: "";
   height: 1px;
@@ -445,13 +436,29 @@ body {
 
 .barbers {
   background-color: var(--secondary-bgc);
-  padding: 120px 0;
+  padding: 84px 0;
+}
+@media screen and (min-width: 768px) {
+  .barbers {
+    padding: 100px 0;
+  }
+}
+@media screen and (min-width: 1200px) {
+  .barbers {
+    padding: 120px 0;
+  }
 }
 
 @media screen and (min-width: 1200px) {
   .barbers-list {
     display: flex;
     gap: 30px;
+  }
+}
+
+@media screen and (max-width: 767px) {
+  .barbers-item:not(:last-child) {
+    margin-bottom: 64px;
   }
 }
 
@@ -513,7 +520,17 @@ body {
 }
 
 .portfolio {
-  padding: 120px 0;
+  padding: 84px 0;
+}
+@media screen and (min-width: 768px) {
+  .portfolio {
+    padding: 100px 0;
+  }
+}
+@media screen and (min-width: 1200px) {
+  .portfolio {
+    padding: 120px 0;
+  }
 }
 
 .portfolio-text {
@@ -524,9 +541,11 @@ body {
   margin-bottom: 44px;
 }
 
-.portfolio-photos {
-  display: flex;
-  gap: 30px;
+@media screen and (min-width: 768px) {
+  .portfolio-photos {
+    display: flex;
+    gap: 30px;
+  }
 }
 
 .main-booking-contacts {

@@ -75,8 +75,12 @@
    }
 
    .menu-networks {
-    padding-left: 40px;
+    position: relative;
+    padding-left: 140px;
    &::before {
+    position: absolute;
+    top: 12px;
+    left: 40px;
     content: "";
     width: 60px;
     height: 1px;
@@ -84,6 +88,9 @@
     display: block;
   }
 }
+   .menu-social-networks-item:not(:last-child) {
+    margin-bottom: 24px;
+   }
 
   .menu-social-networks-link {
     font-weight: 600;

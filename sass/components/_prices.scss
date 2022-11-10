@@ -8,12 +8,44 @@
   }
   
   .box-services-prices {
-    
-    padding: 30px 22px;
-    background-image: linear-gradient(180deg, #171A24 0%, rgba(23, 26, 36, 0.2) 100%);
+    display: none;
+    @include tablet {
+      padding: 30px 22px;
+      background-image: linear-gradient(180deg, #171A24 0%, rgba(23, 26, 36, 0.2) 100%);
+    }
+   
    @include desktop {
     width: 570px;
    }
+  }
+
+  .mobile-services-prices {
+    padding: 30px 20px;
+      background-image: linear-gradient(180deg, #171A24 0%, rgba(23, 26, 36, 0.2) 100%);
+  }
+
+  .mobile-services-prices-item {
+    display: flex;
+    align-items: baseline;
+  &:not(:last-child) {
+    margin-bottom: 20px;
+    }
+  &::before {
+    content: "";
+    height: 1px;
+    min-width: 65px;
+    background: rgba(157, 164, 189, 0.12);
+    flex-grow: 1;
+    order: 1;
+    } 
+  }
+
+  .mobile-elements-bottom-text {
+    font-size: 14px;
+    line-height: 1.4;
+    letter-spacing: 0.02em;
+    color: var(--third-text-color);
+
   }
   
   .list-services-prices {

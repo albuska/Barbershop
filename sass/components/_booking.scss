@@ -22,7 +22,10 @@
   
   .booking {
     padding: 84px 0;
-    width: calc(50% + 15px);
+
+    @include tablet {
+      width: calc(50% + 15px);
+    } 
   }
   
   .booking-title {
@@ -31,6 +34,10 @@
   line-height: 1.16;
   letter-spacing: 0.05em;
   color: var(--primary-bgc);
+
+  @media screen and (max-width: 767px) {
+  text-align: center;
+  }
   }
   
   .label-textarea {
@@ -65,14 +72,26 @@
   }
   
   .main-input {
-    display: flex;
-    flex-wrap: wrap;
+    
     list-style: none;
     padding: 44px 0;
+
+    @include tablet {
+      display: flex;
+      flex-wrap: wrap;
+    }
   }
   
   .main-input .input-list + .input-list {
-    margin-left: 30px;
+    @include tablet {
+      margin-left: 30px;
+    }
+  }
+
+  .input-list:not(:last-child) {
+    @media screen and (max-width: 767px) {
+     margin-bottom: 67px; 
+    }
   }
   
   /* .message {
@@ -98,7 +117,7 @@
   } */
   
   .input {
-    width: 270px;
+    width: 100%;
     background-color: transparent;
     border-top: none;
     border-left: none;
@@ -114,7 +133,12 @@
     color: var(--primary-bgc);
     border-color: var(--primary-bgc);
   }
+
+  @include tablet {
+    width: 270px; 
   }
+  }
+
   
   .input::placeholder {
   font-weight: 600;

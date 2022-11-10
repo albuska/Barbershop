@@ -1,10 +1,9 @@
 .contacts-work-hours {
-  
   @media screen and (max-width: 1199px) {
+  
     background-image: url(../images/фон/Bgfooter.png);
     background-color: #191C26;
     background-repeat: no-repeat;
-    // max-width: 1600px;
     margin: 0 auto;   
     padding: 100px 0;
   }
@@ -32,6 +31,10 @@
     letter-spacing: 0.05em;
     color: var(--primary-bgc);
     margin-bottom: 40px;
+    
+    @media screen and (max-width: 767px) {
+      text-align: center;
+      }
   }
 
   .address {

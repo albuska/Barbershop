@@ -44,13 +44,7 @@
   }
 
   .elements-bottom-text {
-    font-size: 14px;
-    line-height: 1.4;
-    letter-spacing: 0.02em;
-    color: var(--third-text-color);
-
-    @include tablet {
       font-size: 18px;
       line-height: 1.7;
-    }
+    
   }

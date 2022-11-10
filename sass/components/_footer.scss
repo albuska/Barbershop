@@ -1,3 +1,7 @@
+.footer {
+  padding: 44px 0;
+}
+
 .main-footer {
     display: flex;
     flex-direction: column-reverse;
@@ -17,9 +21,18 @@
   }
   
   .networks-footer {
+    margin-left: auto;
+    margin-bottom: 20px;
     display: flex;
     align-items: center;
     gap: 40px;
+    &::before {
+    content: "";
+    width: 60px;
+    height: 1px;
+    background-color: currentColor;
+    display: block;
+    }
   } 
   
   .social-networks-link-footer {

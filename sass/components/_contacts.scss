@@ -5,9 +5,12 @@
   
     background-image: url(../images/фон/Bgfooter.png);
     background-color: #191C26;
-    background-repeat: no-repeat;
-    margin: 0 auto;   
+    background-repeat: no-repeat;  
     padding: 100px 0;
+
+  @media screen and (max-width: 767px) {
+    margin: 0 auto; 
+  }
   }
 
   @media screen and (max-width: 767px) {
@@ -21,6 +24,7 @@
     }
 
   .contacts-title {
+    padding-left: 39px;
     font-style: normal;
     font-weight: 700;
     font-size: 42px;
@@ -36,6 +40,11 @@
 
   .address-overlay {
     padding-left: 35px;
+
+    @include tablet {
+      display: flex;
+      gap: 80px;
+    }
   }
 
   .address {
@@ -72,6 +81,9 @@
     text-transform: uppercase;
     color: var(--primary-bgc);
     margin-top: 44px;
+    @include tablet {
+      margin-top: 0;
+    }
 
     @include desktop {
       margin-top: 70px;

@@ -22,7 +22,15 @@
     @include tablet {
       display: flex;
       gap: 30px;
+      flex-wrap: wrap;
     }
+    @include desktop {
+      flex-wrap: nowrap;
+    }
+  }
+
+  .portfolio-photos-item {
+    width: calc((100% - 2 * 30px) / 2);
   }
 
   .portfolio-photos-item:not(:last-child) {

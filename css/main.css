@@ -98,6 +98,10 @@ body {
   }
 }
 
+.logo-header-link {
+  display: block;
+}
+
 .button-open-menu {
   margin-left: auto;
   display: inline-flex;
@@ -220,10 +224,12 @@ body {
   }
 }
 
-.main-contact {
-  display: none;
+@media screen and (max-width: 767px) {
+  .main-contact {
+    display: none;
+  }
 }
-@media screen and (min-width: 768px) {
+@media screen and (min-width: 1200px) {
   .main-contact {
     display: flex;
     align-items: center;
@@ -258,7 +264,7 @@ body {
     align-items: center;
     gap: 40px;
     margin-left: -100px;
-    top: 480px;
+    top: 380px;
   }
   .networks::before {
     content: "";
@@ -266,6 +272,11 @@ body {
     height: 1px;
     background-color: currentColor;
     display: block;
+  }
+}
+@media screen and (min-width: 1200px) {
+  .networks {
+    top: 480px;
   }
 }
 
@@ -307,8 +318,10 @@ body {
   margin-top: 44px;
 }
 
-.button-booking {
-  margin: 0 auto;
+@media screen and (max-width: 767px) {
+  .button-booking {
+    margin: 0 auto;
+  }
 }
 
 @media screen and (max-width: 767px) {
@@ -333,6 +346,7 @@ body {
 }
 @media screen and (min-width: 768px) {
   .hero-content {
+    width: 584px;
     padding-left: 100px;
   }
 }
@@ -584,6 +598,11 @@ body {
 .features {
   padding: 84px 0;
 }
+@media screen and (min-width: 768px) {
+  .features {
+    padding: 100px 0;
+  }
+}
 @media screen and (min-width: 1200px) {
   .features {
     padding: 120px 70px 120px 100px;
@@ -594,6 +613,11 @@ body {
   display: flex;
   min-width: 170px;
   flex-wrap: wrap;
+}
+@media screen and (min-width: 768px) {
+  .main-numbers-box {
+    padding-left: 279px;
+  }
 }
 
 .numbers-box:nth-child(odd) {
@@ -676,6 +700,11 @@ body {
   line-height: 1.67;
   letter-spacing: 0.02em;
   color: var(--secondary-color);
+}
+@media screen and (max-width: 1199px) {
+  .features-bottom-text {
+    width: 500px;
+  }
 }
 
 .barbers {
@@ -789,7 +818,17 @@ body {
   .portfolio-photos-list {
     display: flex;
     gap: 30px;
+    flex-wrap: wrap;
   }
+}
+@media screen and (min-width: 1200px) {
+  .portfolio-photos-list {
+    flex-wrap: nowrap;
+  }
+}
+
+.portfolio-photos-item {
+  width: calc((100% - 60px) / 2);
 }
 
 @media screen and (max-width: 767px) {
@@ -822,7 +861,7 @@ body {
 .booking {
   padding: 84px 31px;
 }
-@media screen and (min-width: 768px) {
+@media screen and (min-width: 1200px) {
   .booking {
     width: calc(50% + 15px);
   }
@@ -877,7 +916,6 @@ body {
 @media screen and (min-width: 768px) {
   .main-input {
     display: flex;
-    flex-wrap: wrap;
   }
 }
 
@@ -930,6 +968,11 @@ display: block;
   border-color: var(--primary-bgc);
 }
 @media screen and (min-width: 768px) {
+  .input {
+    width: 330px;
+  }
+}
+@media screen and (min-width: 1200px) {
   .input {
     width: 270px;
   }
@@ -984,8 +1027,12 @@ display: block;
     background-image: url(../images/фон/Bgfooter.png);
     background-color: #191C26;
     background-repeat: no-repeat;
-    margin: 0 auto;
     padding: 100px 0;
+  }
+}
+@media screen and (max-width: 1199px) and (max-width: 767px) {
+  .contacts {
+    margin: 0 auto;
   }
 }
 @media screen and (max-width: 767px) {
@@ -1001,6 +1048,7 @@ display: block;
 }
 
 .contacts-title {
+  padding-left: 39px;
   font-style: normal;
   font-weight: 700;
   font-size: 42px;
@@ -1017,6 +1065,12 @@ display: block;
 
 .address-overlay {
   padding-left: 35px;
+}
+@media screen and (min-width: 768px) {
+  .address-overlay {
+    display: flex;
+    gap: 80px;
+  }
 }
 
 .address {
@@ -1054,6 +1108,11 @@ display: block;
   color: var(--primary-bgc);
   margin-top: 44px;
 }
+@media screen and (min-width: 768px) {
+  .address-top-text {
+    margin-top: 0;
+  }
+}
 @media screen and (min-width: 1200px) {
   .address-top-text {
     margin-top: 70px;
@@ -1071,16 +1130,24 @@ display: block;
 .footer {
   padding: 44px 0;
 }
+@media screen and (min-width: 768px) {
+  .footer {
+    padding: 56px 0;
+  }
+}
 
 .main-footer {
   display: flex;
-  flex-direction: column-reverse;
+}
+@media screen and (max-width: 767px) {
+  .main-footer {
+    flex-direction: column-reverse;
+  }
 }
 @media screen and (min-width: 1200px) {
   .main-footer {
     justify-content: space-between;
     align-items: center;
-    padding: 56px 0;
   }
 }
 
@@ -1104,6 +1171,11 @@ display: block;
   height: 1px;
   background-color: currentColor;
   display: block;
+}
+@media screen and (min-width: 768px) {
+  .networks-footer {
+    margin-bottom: 0;
+  }
 }
 
 .social-networks-link-footer {

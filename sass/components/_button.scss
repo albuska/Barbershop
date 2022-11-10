@@ -39,5 +39,12 @@
   }
 
   .button-booking {
-   margin: 0 auto;
+    @media screen and (max-width: 767px) {
+      margin: 0 auto; 
+    }
   }
+
+  
+  // .icon-nav-button {
+  //   margin-top: 20px;
+  // }

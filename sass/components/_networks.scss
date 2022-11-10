@@ -20,7 +20,7 @@
       align-items: center;
       gap: 40px;
       margin-left: -100px;
-      top: 480px;     
+      top: 380px;   
     &::before {
       content: "";
       width: 60px;
@@ -28,6 +28,10 @@
       background-color: currentColor;
       display: block;
     }
+    }
+
+    @include desktop {
+      top: 480px; 
     }
   } 
 

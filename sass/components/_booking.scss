@@ -23,7 +23,7 @@
   .booking {
     padding: 84px 31px;
 
-    @include tablet {
+    @include desktop {
       width: calc(50% + 15px);
     } 
   }
@@ -69,6 +69,10 @@
     color: var(--primary-bgc);
     border-color: var(--primary-bgc);
   }
+
+  // @include tablet {
+  //   width: ;
+  // }
   }
   
   .main-input {
@@ -78,7 +82,7 @@
 
     @include tablet {
       display: flex;
-      flex-wrap: wrap;
+      // flex-wrap: wrap;
     }
   }
   
@@ -135,6 +139,9 @@
   }
 
   @include tablet {
+    width: 330px;
+  }
+  @include desktop {
     width: 270px; 
   }
   }

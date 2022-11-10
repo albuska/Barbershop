@@ -14,6 +14,10 @@
       fill: var(--primary-color);
     }
   }
+
+  .logo-header-link {
+    display: block;
+  }
  
    .button-open-menu {
     margin-left: auto;
@@ -138,8 +142,11 @@
   }
   
   .main-contact {
-  display: none;
-    @include tablet {
+    @media screen and (max-width: 767px) {
+      display: none;   
+    }
+ 
+    @include desktop {
       display: flex;
       align-items: center;
       gap: 43px;

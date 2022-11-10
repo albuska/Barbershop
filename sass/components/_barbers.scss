@@ -1,9 +1,11 @@
 .barbers {
+  
     background-color: var(--secondary-bgc);
     padding: 84px 0;
 
     @include tablet {
     padding: 100px 0;
+    // text-align: center;
     }
 
     @include desktop {
@@ -26,6 +28,7 @@
   }
   
   .barbers-text {
+    
     font-weight: 600;
     font-size: 11px;
     text-transform: uppercase;

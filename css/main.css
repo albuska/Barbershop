@@ -590,7 +590,7 @@ body {
 
 .main-numbers-box {
   display: flex;
-  max-width: 370px;
+  min-width: 170px;
   flex-wrap: wrap;
 }
 
@@ -603,7 +603,7 @@ body {
 }
 
 .numbers-box {
-  width: 170px;
+  width: 193px;
   height: 133px;
   background-color: var(--secondary-bgc);
   text-align: center;
@@ -618,9 +618,6 @@ body {
 }
 
 .features-sup {
-  /* font-weight: 600;
-  font-size: 16px;
-  line-height: 1.4; */
   color: var(--accent-color);
 }
 

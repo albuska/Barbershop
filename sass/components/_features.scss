@@ -8,8 +8,12 @@ padding: 84px 0;
   
   .main-numbers-box {
     display: flex;
-    max-width: 370px;
+    min-width: 170px;
     flex-wrap: wrap;
+
+    // @include desktop {
+    //   max-width: 370px;  
+    // }
   }
   
   .numbers-box:nth-child(odd) {
@@ -21,7 +25,7 @@ padding: 84px 0;
   }
   
   .numbers-box {
-    width: 170px;
+    width: 193px;
     height: 133px;
     background-color: var(--secondary-bgc);
     text-align: center;
@@ -36,9 +40,9 @@ padding: 84px 0;
   }
   
   .features-sup {
-  /* font-weight: 600;
-  font-size: 16px;
-  line-height: 1.4; */
+  // font-weight: 600;
+  // font-size: 16px;
+  // line-height: 1.4;
   color: var(--accent-color);
   }
   

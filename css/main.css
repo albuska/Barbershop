@@ -35,6 +35,7 @@ img {
   display: block;
   max-width: 100%;
   height: auto;
+  width: 100%;
 }
 
 .is-hidden {
@@ -500,6 +501,7 @@ body {
 }
 
 .top-text {
+  font-style: normal;
   display: flex;
   align-items: center;
   margin-bottom: 20px;
@@ -611,6 +613,8 @@ body {
 }
 
 .numbers {
+  display: inline-flex;
+  align-items: center;
   font-weight: 700;
   font-size: 42px;
   letter-spacing: 0.05em;
@@ -618,6 +622,10 @@ body {
 }
 
 .features-sup {
+  margin-left: 2px;
+  font-weight: 600;
+  font-size: 16px;
+  line-height: 1.4;
   color: var(--accent-color);
 }
 
@@ -812,7 +820,7 @@ body {
 }
 
 .booking {
-  padding: 84px 0;
+  padding: 84px 31px;
 }
 @media screen and (min-width: 768px) {
   .booking {
@@ -972,7 +980,7 @@ display: block;
 }
 
 @media screen and (max-width: 1199px) {
-  .contacts-work-hours {
+  .contacts {
     background-image: url(../images/фон/Bgfooter.png);
     background-color: #191C26;
     background-repeat: no-repeat;
@@ -981,11 +989,10 @@ display: block;
   }
 }
 @media screen and (max-width: 767px) {
-  .contacts-work-hours {
+  .contacts {
     padding: 84px 0;
   }
 }
-
 @media screen and (min-width: 1200px) {
   .contacts {
     width: calc(50% - 15px);
@@ -1006,6 +1013,10 @@ display: block;
   .contacts-title {
     text-align: center;
   }
+}
+
+.address-overlay {
+  padding-left: 35px;
 }
 
 .address {
@@ -1050,6 +1061,7 @@ display: block;
 }
 
 .address-bottom-text {
+  font-style: normal;
   font-size: 18px;
   line-height: 1.67;
   letter-spacing: 0.02em;

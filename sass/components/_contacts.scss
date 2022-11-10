@@ -1,4 +1,6 @@
-.contacts-work-hours {
+
+
+.contacts {
   @media screen and (max-width: 1199px) {
   
     background-image: url(../images/фон/Bgfooter.png);
@@ -11,11 +13,6 @@
   @media screen and (max-width: 767px) {
     padding: 84px 0;
   }
-
-
-}
-
-.contacts {
 
     @include desktop {
       width: calc(50% - 15px);
@@ -35,6 +32,10 @@
     @media screen and (max-width: 767px) {
       text-align: center;
       }
+  }
+
+  .address-overlay {
+    padding-left: 35px;
   }
 
   .address {
@@ -79,6 +80,7 @@
   }
   
   .address-bottom-text {
+    font-style: normal;
     font-size: 18px;
     line-height: 1.67;
     letter-spacing: 0.02em;

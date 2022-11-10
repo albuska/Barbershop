@@ -117,6 +117,9 @@ body {
   border: none;
   background-color: transparent;
 }
+.button-close-menu:hover, .button-close-menu:focus {
+  fill: var(--accent-color);
+}
 
 .menu-container {
   position: fixed;
@@ -133,6 +136,19 @@ body {
   }
 }
 
+.menu-container-list {
+  padding-top: 118px;
+  padding-left: 40px;
+}
+
+.menu-container-contact {
+  padding: 64px 0 64px 40px;
+}
+
+.menu-container-item:not(:last-child) {
+  margin-bottom: 24px;
+}
+
 .menu-container-link {
   font-weight: 600;
   font-size: 18px;
@@ -141,13 +157,36 @@ body {
   color: var(--primary-color);
 }
 
-.icon-nav {
-  display: flex;
+.menu-networks {
+  padding-left: 40px;
+}
+.menu-networks::before {
+  content: "";
+  width: 60px;
+  height: 1px;
+  background-color: currentColor;
+  display: block;
+}
+
+.menu-social-networks-link {
   font-weight: 600;
-  font-size: 12px;
-  line-height: 1.33;
-  letter-spacing: 0.1em;
-  color: var(--primary-bgc);
+  font-size: 11px;
+  letter-spacing: 0.2em;
+  color: var(--primary-color);
+}
+
+.icon-nav {
+  display: none;
+}
+@media screen and (min-width: 768px) {
+  .icon-nav {
+    display: flex;
+    font-weight: 600;
+    font-size: 12px;
+    line-height: 1.33;
+    letter-spacing: 0.1em;
+    color: var(--primary-bgc);
+  }
 }
 
 .nav {
@@ -245,6 +284,11 @@ body {
 }
 .btn-secondary:hover, .btn-secondary:focus {
   color: var(--primary-bgc);
+}
+
+.button-menu-header {
+  width: 194px;
+  margin-top: 24px;
 }
 
 .button-services {

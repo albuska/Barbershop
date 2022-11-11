@@ -10,4 +10,8 @@ body {
     --secondary-color: #555555;
     --third-text-color: #9da4bd;
     --accent-color: #ff6c00;
+    --bg-linear: linear-gradient(
+      rgba(25, 28, 38, 0.2),
+      rgba(25, 28, 38, 0.2)
+    );
   }

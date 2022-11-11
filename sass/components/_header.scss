@@ -7,7 +7,7 @@
     width: 68px;
     height: 55px;
     display: block;
-    margin-right: 132px;
+    // padding-right: 52px;
     fill: var(--primary-bgc);
 
     @include tablet {
@@ -50,6 +50,7 @@
     height: 100%;
     background-color: var(--primary-bgc);
     z-index: 1;
+    overflow: auto;
   
     @include tablet {
       display: none;
@@ -133,11 +134,16 @@
     margin-top: 32px;
   }
   
-  .header-link{
+  .header-link {
     display: none;
 
   @include tablet {
     display: flex;
+    margin-left: 70px;
+  }
+
+  @include desktop {
+    padding-left: 130px;
   }
   }
   
@@ -145,6 +151,14 @@
     @media screen and (max-width: 767px) {
       display: none;   
     }
+
+    @media screen and (min-width: 768px) and (max-width: 1199px) {
+      display: flex;
+      flex-direction: column-reverse;
+      gap: 20px;
+      align-items: center;
+      margin-left: auto;
+    } 
  
     @include desktop {
       display: flex;
@@ -155,7 +169,7 @@
    
   }
   
-  .header-link .header-item + .header-item {
+  .header-item:not(:first-child){
     margin-left: 30px;
   }
   

@@ -41,10 +41,12 @@
   .address-overlay {
     padding-left: 35px;
 
-    @include tablet {
+    @media screen and (min-width: 768px) and (max-width: 1199px) {
       display: flex;
       gap: 80px;
     }
+
+   
   }
 
   .address {

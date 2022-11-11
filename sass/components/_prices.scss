@@ -8,7 +8,9 @@
   }
   
   .box-services-prices {
-    display: none;
+    @media screen and (max-width: 1199px) {
+      display: none;  
+    }
     @include tablet {
       padding: 30px 22px;
       background-image: linear-gradient(180deg, #171A24 0%, rgba(23, 26, 36, 0.2) 100%);
@@ -22,7 +24,10 @@
   .mobile-services-prices {
     padding: 30px 20px;
       background-image: linear-gradient(180deg, #171A24 0%, rgba(23, 26, 36, 0.2) 100%);
+  @include desktop {
+    display: none;
   }
+    }
 
   .mobile-services-prices-item {
     display: flex;

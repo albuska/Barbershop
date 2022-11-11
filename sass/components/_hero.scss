@@ -27,6 +27,12 @@
       width: 584px;
       padding-left: 100px;
     }
+
+    @include desktop {
+      width: 1070px;
+      height: 680px;
+      margin-left: 90px;
+    }
   }
   
   .hero-top-text {

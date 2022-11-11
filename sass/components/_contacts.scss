@@ -2,11 +2,13 @@
 
 .contacts {
   @media screen and (max-width: 1199px) {
-  
-    background-image: url(../images/фон/Bgfooter.png);
+    background-image: url(../images/background/bg-contact-mobile.png);
     background-color: #191C26;
     background-repeat: no-repeat;  
     padding: 100px 0;
+    @include retina {
+    background-image: url(../images/background/bg-contact-mobile-2x.png);  
+    }
 
   @media screen and (max-width: 767px) {
     margin: 0 auto; 
@@ -16,6 +18,12 @@
   @media screen and (max-width: 767px) {
     padding: 84px 0;
   }
+     @include tablet {
+    background-image: url(../images/background/bg-contact-tablet.png);  
+    @include retina {
+    background-image: url(../images/background/bg-contact-tablet-2x.png);
+    }
+     }
 
     @include desktop {
       width: calc(50% - 15px);

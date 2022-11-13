@@ -993,7 +993,7 @@ body {
 }
 
 .portfolio-photos-item {
-  width: 260px;
+  width: 100%;
 }
 @media screen and (min-width: 480px) and (max-width: 767px) {
   .portfolio-photos-item {

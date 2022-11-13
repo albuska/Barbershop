@@ -22,8 +22,15 @@
   }
 
   .mobile-services-prices {
-    padding: 30px 20px;
-      background-image: linear-gradient(180deg, #171A24 0%, rgba(23, 26, 36, 0.2) 100%);
+    padding: 30px 10px;
+    background-image: linear-gradient(180deg, #171A24 0%, rgba(23, 26, 36, 0.2) 100%);
+    @media screen and (max-width: 479px) {
+      width: 260px;
+    }
+    @include mobile {
+    padding: 30px 20px;  
+    }
+  
   @include desktop {
     display: none;
   }
@@ -38,18 +45,34 @@
   &::before {
     content: "";
     height: 1px;
-    min-width: 65px;
     background: rgba(157, 164, 189, 0.12);
     flex-grow: 1;
     order: 1;
+    }
+
+    @media screen and (max-width: 479px) {
+      &::before {
+        content: "";
+        max-width: 25px;
+        } 
+    }
+    @include mobile {
+  &::before {
+    content: "";
+    min-width: 65px;
+      } 
     } 
   }
 
   .mobile-elements-bottom-text {
-    font-size: 14px;
+    font-size: 11px;
     line-height: 1.4;
     letter-spacing: 0.02em;
     color: var(--third-text-color);
+
+    @include mobile {
+    font-size: 14px;  
+    }
 
   }
   

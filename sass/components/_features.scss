@@ -99,13 +99,18 @@ padding: 84px 0;
   }
   
   .features-title {
-    width: 430px;
+    width: 320px;
     font-weight: 700;
-    font-size: 42px;
+    font-size: 36px;
     line-height: 1.16;
     letter-spacing: 0.05em;
     color: var(--primary-color);
     margin-bottom: 20px;
+
+    @include mobile {
+    width: 430px;
+    font-size: 42px; 
+    }
   }
   
   .features-bottom-text {

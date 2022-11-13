@@ -34,8 +34,12 @@
   .button-services {
     padding-left: 15px;
     padding-right: 15px;
-    margin: 0 auto;
     margin-top: 44px;
+
+    @include mobile {
+      margin: 0 auto;
+      margin-top: 44px;
+    }
   }
 
   .button-booking {

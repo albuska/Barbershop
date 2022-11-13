@@ -30,7 +30,8 @@
   }
 
   .portfolio-photos-item {
-   @media screen and (max-width: 767px) {
+   width: 250px;
+   @media screen and (min-width: 480px) and (max-width: 767px) {
     width: 418px;
    }
     @media screen and (min-width: 768px) and (max-width: 1199px) {

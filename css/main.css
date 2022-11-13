@@ -330,13 +330,8 @@ body {
 .button-services {
   padding-left: 15px;
   padding-right: 15px;
+  margin: 0 auto;
   margin-top: 44px;
-}
-@media screen and (min-width: 480px) {
-  .button-services {
-    margin: 0 auto;
-    margin-top: 44px;
-  }
 }
 
 @media screen and (max-width: 767px) {
@@ -694,7 +689,7 @@ body {
 @media screen and (max-width: 479px) {
   .mobile-services-prices-item::before {
     content: "";
-    max-width: 25px;
+    min-width: 16px;
   }
 }
 @media screen and (min-width: 480px) {
@@ -771,11 +766,16 @@ body {
 }
 
 .numbers-box {
-  width: 194px;
+  width: 110px;
   height: 133px;
   background-color: var(--secondary-bgc);
   text-align: center;
   padding: 20px 24px;
+}
+@media screen and (min-width: 480px) {
+  .numbers-box {
+    width: 194px;
+  }
 }
 @media screen and (min-width: 1200px) {
   .numbers-box {
@@ -787,9 +787,14 @@ body {
   display: inline-flex;
   align-items: center;
   font-weight: 700;
-  font-size: 42px;
+  font-size: 36px;
   letter-spacing: 0.05em;
   color: var(--primary-color);
+}
+@media screen and (min-width: 480px) {
+  .numbers {
+    font-size: 42px;
+  }
 }
 
 .features-sup {
@@ -988,7 +993,7 @@ body {
 }
 
 .portfolio-photos-item {
-  width: 250px;
+  width: 260px;
 }
 @media screen and (min-width: 480px) and (max-width: 767px) {
   .portfolio-photos-item {

@@ -923,8 +923,15 @@ body {
   }
 }
 
-.portfolio-photos-item {
-  width: calc((100% - 60px) / 2);
+@media screen and (max-width: 767px) {
+  .portfolio-photos-item {
+    width: 418px;
+  }
+}
+@media screen and (min-width: 768px) and (max-width: 1199px) {
+  .portfolio-photos-item {
+    width: calc((100% - 60px) / 2);
+  }
 }
 
 @media screen and (max-width: 767px) {

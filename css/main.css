@@ -1012,6 +1012,12 @@ body {
   }
 }
 
+@media screen and (max-width: 479px) {
+  .portfolio-photos-item img {
+    width: 100%;
+  }
+}
+
 .main-booking-contacts {
   background-color: #191C26;
 }

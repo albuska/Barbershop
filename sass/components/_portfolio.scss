@@ -44,3 +44,9 @@
      margin-bottom: 30px; 
     }
   }
+
+  .portfolio-photos-item img {
+    @media screen and (max-width: 479px) {
+      width: 100%;
+    }
+  }

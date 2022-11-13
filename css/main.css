@@ -658,7 +658,7 @@ body {
 }
 @media screen and (max-width: 479px) {
   .mobile-services-prices {
-    width: 260px;
+    width: 320px;
   }
 }
 @media screen and (min-width: 480px) {

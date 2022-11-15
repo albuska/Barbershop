@@ -1,7 +1,6 @@
 .button {
     display: block;
     min-width: 160px;
-    // height: 40px;
     letter-spacing: 0.09em;
     color: var(--primary-bgc);
     text-transform: uppercase;
@@ -9,8 +8,6 @@
     border-radius: 25px;
     background-color: transparent;
     cursor: pointer;
-    // padding: 12px 0;
-    // margin-right: 17px;
     transition: background-color 250ms linear;
     &:hover,
     &:focus {
@@ -21,6 +18,7 @@
   .btn-secondary {
     color: var(--primary-color);
     transition: color 250ms linear;
+    height: 40px;
   &:hover,
   &:focus {
       color: var(--primary-bgc);
@@ -37,10 +35,11 @@
     padding-right: 15px;
     margin: 0 auto;
     margin-top: 44px;
-
+    height: 40px;
   }
 
   .button-booking {
+    height: 40px;
     @media screen and (max-width: 767px) {
       margin: 0 auto; 
     }

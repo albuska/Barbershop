@@ -132,7 +132,7 @@
   .main-nav {
     display: flex;
     align-items:flex-start;
-    padding-top: 32px;
+    padding: 40px 0;
   }
   
   .header-link {
@@ -144,7 +144,7 @@
   }
 
   @include desktop {
-    padding-left: 130px;
+    padding-left: 50px;
   }
   }
   

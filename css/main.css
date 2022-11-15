@@ -219,7 +219,7 @@ body {
 .main-nav {
   display: flex;
   align-items: flex-start;
-  padding-top: 32px;
+  padding: 40px 0;
 }
 
 .header-link {
@@ -233,7 +233,7 @@ body {
 }
 @media screen and (min-width: 1200px) {
   .header-link {
-    padding-left: 130px;
+    padding-left: 50px;
   }
 }
 
@@ -321,6 +321,7 @@ body {
 .btn-secondary {
   color: var(--primary-color);
   transition: color 250ms linear;
+  height: 40px;
 }
 .btn-secondary:hover, .btn-secondary:focus {
   color: var(--primary-bgc);
@@ -336,8 +337,12 @@ body {
   padding-right: 15px;
   margin: 0 auto;
   margin-top: 44px;
+  height: 40px;
 }
 
+.button-booking {
+  height: 40px;
+}
 @media screen and (max-width: 767px) {
   .button-booking {
     margin: 0 auto;
@@ -360,7 +365,7 @@ body {
   background-repeat: no-repeat;
   background-size: cover;
   flex-shrink: 1;
-  padding-top: 204px;
+  padding-top: 272px;
   margin-left: auto;
   padding-left: 31px;
 }

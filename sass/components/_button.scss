@@ -1,7 +1,7 @@
 .button {
     display: block;
     min-width: 160px;
-    height: 40px;
+    // height: 40px;
     letter-spacing: 0.09em;
     color: var(--primary-bgc);
     text-transform: uppercase;
@@ -9,6 +9,7 @@
     border-radius: 25px;
     background-color: transparent;
     cursor: pointer;
+    // padding: 12px 0;
     // margin-right: 17px;
     transition: background-color 250ms linear;
     &:hover,

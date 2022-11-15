@@ -201,6 +201,7 @@ body {
     line-height: 1.33;
     letter-spacing: 0.1em;
     color: var(--primary-bgc);
+    padding: 12px 0;
   }
 }
 
@@ -213,8 +214,8 @@ body {
 
 .main-nav {
   display: flex;
-  align-items: center;
-  margin-top: 32px;
+  align-items: flex-start;
+  padding-top: 32px;
 }
 
 .header-link {
@@ -241,7 +242,7 @@ body {
   .main-contact {
     display: flex;
     flex-direction: column-reverse;
-    gap: 20px;
+    gap: 8px;
     align-items: center;
     margin-left: auto;
   }
@@ -300,7 +301,6 @@ body {
 .button {
   display: block;
   min-width: 160px;
-  height: 40px;
   letter-spacing: 0.09em;
   color: var(--primary-bgc);
   text-transform: uppercase;

@@ -1043,17 +1043,26 @@ body {
 
 @media screen and (min-width: 1200px) {
   .booking-contacts {
+    width: 1170px;
+    margin: 0 auto;
     display: flex;
   }
 }
 
-.booking {
-  padding: 84px 0 184px;
+@media screen and (max-width: 767px) {
+  .booking {
+    padding: 84px 30px;
+  }
+}
+@media screen and (max-width: 1199px) {
+  .booking {
+    padding: 100px 30px;
+  }
 }
 @media screen and (min-width: 1200px) {
   .booking {
     width: calc(50% + 15px);
-    padding-top: 130px;
+    padding: 130px 30px;
   }
 }
 
@@ -1216,11 +1225,13 @@ display: block;
   color: var(--primary-bgc);
 }
 
+.contacts {
+  background-image: url(../images/background/bg-contact-mobile.png);
+  background-repeat: no-repeat;
+  background-size: cover;
+}
 @media screen and (max-width: 1199px) {
   .contacts {
-    background-image: url(../images/background/bg-contact-mobile.png);
-    background-repeat: no-repeat;
-    background-size: cover;
     padding: 100px 0;
   }
 }
@@ -1252,8 +1263,7 @@ display: block;
 @media screen and (min-width: 1200px) {
   .contacts {
     width: calc(50% - 15px);
-    padding-top: 130px;
-    padding-left: 100px;
+    padding: 130px 15px;
   }
 }
 

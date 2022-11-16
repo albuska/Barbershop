@@ -1,13 +1,4 @@
-// .general {
-//   @include desktop {
-//     background-color: #191C26;  
-//     max-width: 1600px;
-//     margin: 0 auto;
-//   }
-// }
-
 .main-booking-contacts {
-    
   background-color: #191C26;
 
   @include desktop {
@@ -17,23 +8,32 @@
   background-size: calc(50% - 15px) 100%;
   max-width: 1600px;
   margin: 0 auto;
-  
   }
 }
 
 .booking-contacts { 
 
 @include desktop {
+  width: 1170px;
+  // padding-left: 15px;
+  // padding-right: 15px;
+  margin: 0 auto;
   display: flex;
 }
 }
 
 .booking {
-  padding: 84px 0 184px;
+  @media screen and (max-width: 767px) {
+    padding: 84px 30px;  
+  }
+
+  @media screen and (max-width: 1199px) {
+    padding: 100px 30px;
+  }
 
   @include desktop {
     width: calc(50% + 15px);
-    padding-top: 130px;
+    padding: 130px 30px;
   } 
 }
 

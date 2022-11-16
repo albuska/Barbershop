@@ -1033,18 +1033,11 @@ body {
 @media screen and (min-width: 1200px) {
   .main-booking-contacts {
     display: flex;
-    background-image: url(../images/background/bg-contact-desktop.png);
-    padding: 130px 0 120px;
     background-repeat: no-repeat;
     background-position: right;
     background-size: calc(50% - 15px) 100%;
     max-width: 1600px;
     margin: 0 auto;
-  }
-}
-@media screen and (min-width: 1200px) and (min-device-pixel-ratio: 2), screen and (min-width: 1200px) and (-webkit-min-device-pixel-ratio: 2), screen and (min-width: 1200px) and (min-resolution: 192dpi), screen and (min-width: 1200px) and (min-resolution: 2dppx) {
-  .main-booking-contacts {
-    background-image: url(../images/background/bg-contact-desktop-2x.png);
   }
 }
 
@@ -1055,12 +1048,12 @@ body {
 }
 
 .booking {
-  padding: 84px 31px;
+  padding: 84px 0 184px;
 }
 @media screen and (min-width: 1200px) {
   .booking {
     width: calc(50% + 15px);
-    padding-top: 0;
+    padding-top: 130px;
   }
 }
 
@@ -1105,6 +1098,11 @@ body {
   color: var(--primary-bgc);
   border-color: var(--primary-bgc);
 }
+@media screen and (min-width: 1200px) {
+  .textarea {
+    width: 570px;
+  }
+}
 
 .main-input {
   list-style: none;
@@ -1144,7 +1142,6 @@ body {
   width: 570px;
   height: 1px;
   background-color: rgba(157, 164, 189, 0.4);
-
 display: block;
 } */
 .input {
@@ -1222,8 +1219,8 @@ display: block;
 @media screen and (max-width: 1199px) {
   .contacts {
     background-image: url(../images/background/bg-contact-mobile.png);
-    background-color: #191C26;
     background-repeat: no-repeat;
+    background-size: cover;
     padding: 100px 0;
   }
 }
@@ -1255,8 +1252,14 @@ display: block;
 @media screen and (min-width: 1200px) {
   .contacts {
     width: calc(50% - 15px);
-    margin-left: 100px;
+    padding-top: 130px;
+    padding-left: 100px;
   }
+}
+
+.online {
+  width: 100%;
+  background-color: #191C26;
 }
 
 .contacts-title {

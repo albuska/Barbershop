@@ -1,19 +1,23 @@
+// .general {
+//   @include desktop {
+//     background-color: #191C26;  
+//     max-width: 1600px;
+//     margin: 0 auto;
+//   }
+// }
+
 .main-booking-contacts {
     
   background-color: #191C26;
 
   @include desktop {
   display: flex;
-  background-image: url(../images/background/bg-contact-desktop.png);  
-  padding: 130px 0 120px;
   background-repeat: no-repeat;
   background-position: right;
   background-size: calc(50% - 15px) 100%;
   max-width: 1600px;
   margin: 0 auto;
-  @include retina {
-  background-image: url(../images/background/bg-contact-desktop-2x.png);
-  }
+  
   }
 }
 
@@ -25,11 +29,11 @@
 }
 
 .booking {
-  padding: 84px 31px;
+  padding: 84px 0 184px;
 
   @include desktop {
     width: calc(50% + 15px);
-    padding-top: 0;
+    padding-top: 130px;
   } 
 }
 
@@ -75,9 +79,9 @@ text-align: center;
   border-color: var(--primary-bgc);
 }
 
-// @include tablet {
-//   width: ;
-// }
+@include desktop {
+  width: 570px;
+}
 }
 
 .main-input {
@@ -121,7 +125,6 @@ text-align: center;
   width: 570px;
   height: 1px;
   background-color: rgba(157, 164, 189, 0.4);
-
 display: block;
 } */
 
